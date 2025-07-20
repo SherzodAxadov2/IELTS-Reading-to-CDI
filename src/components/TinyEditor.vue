@@ -52,10 +52,9 @@ const initOptions = {
   content_style: dark ? `${contentStyleBase}; color:#f8fafc; background-color:#1e293b;` : contentStyleBase,
   height: 400,
   menubar: false,
-  plugins: "lists link image table code help wordcount",
-  toolbar:
-    "undo redo | formatselect | bold italic underline | bullist numlist | alignleft aligncenter alignright | code",
-  
   placeholder: props.placeholder ?? "",
+  toolbar_mode: 'sliding',
+  plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+  toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
 };
 </script>
