@@ -1,5 +1,8 @@
 <template>
-  <Editor api-key="zjbnl8ll74pjzq7ctti99y3r515oxw7sokk8736zbv0oyjzj" :tinymce-script-src="tinymceSrc"
+  <Editor
+
+    api-key="zjbnl8ll74pjzq7ctti99y3r515oxw7sokk8736zbv0oyjzj"
+    :tinymce-script-src="tinymceSrc"
     v-model="localContent"
     :init="initOptions"
     :disabled="disabled"

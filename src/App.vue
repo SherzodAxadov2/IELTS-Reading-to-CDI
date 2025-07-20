@@ -179,6 +179,11 @@ applyTheme();
 function toggleTheme() {
   isDark.value = !isDark.value;
   applyTheme();
+  // force page reload so TinyMCE and any non-reactive libs pick up the new theme in production
+  location.reload();
+}
+  isDark.value = !isDark.value;
+  applyTheme();
 }
 
 // ---------------- Timer (preview only) ----------------
