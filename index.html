@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script>
+      // Early theme application to avoid flash of wrong theme in production
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Reading to CDI</title>
-    <!-- Tailwind CDN for quick styling in dev -->
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script type="module" crossorigin src="/src/main.ts"></script>
     <link href="/src/style.css" rel="stylesheet" />
   </head>
