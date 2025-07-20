@@ -41,7 +41,8 @@ watch(
   }
 );
 
-const tinymceSrc = "/node_modules/tinymce/tinymce.min.js";
+// Use CDN so script is available in both dev and production builds
+const tinymceSrc = "https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js";
 
 const dark = document.documentElement.classList.contains("dark");
 
