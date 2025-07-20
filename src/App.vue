@@ -182,9 +182,7 @@ function toggleTheme() {
   // force page reload so TinyMCE and any non-reactive libs pick up the new theme in production
   location.reload();
 }
-  isDark.value = !isDark.value;
-  applyTheme();
-}
+
 
 // ---------------- Timer (preview only) ----------------
 const INITIAL_SEC = 20 * 60;
